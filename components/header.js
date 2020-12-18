@@ -1,6 +1,12 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import Document from 'next/document';
+import { useEffect } from 'react';
+
+const toggle = () => {
+  document.body.classList.toggle('mobile-nav-active');
+}
 
 export default function header() {
 
@@ -54,7 +60,7 @@ export default function header() {
 
           </ul>
         </nav>
-        <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+        <button type="button" onClick={toggle} class="mobile-nav-toggle d-xl-none"><i class="bi bi-list"></i></button>
 
       </div>
     </header>
