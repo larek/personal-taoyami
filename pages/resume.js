@@ -16,23 +16,29 @@ export default function contacts({ data }) {
           {data.map((i, k) => {
             return (
               <div className="resume-item" key={'resume-item-' + k}>
-                <h4>{i.name}</h4>
-                <div className='mb-4'>
+                <div className='py-1'><i className='bi bi-people-fill'></i> {i.name}</div>
+                <div className='py-1'><i className='bi bi-calendar3'></i> {i.period}</div>
+                <div className='py-1'>
+                  <i className='bi bi-link-45deg'></i>
                   {
                     i.links.map((i, k) => {
-                      return <a className='btn btn-link btn-sm ml-2' target='_blank' href={i} key={'resume-item' + k}>{i}</a>
+                      return <a target='_blank' href={i} key={'resume-item' + k}>{i} </a>
                     })
                   }
                 </div>
-                <h5>{i.period}</h5>
-                <p><em>{i.position}</em></p>
-                <ul>
-                  {
-                    i.works.map((i, k) => {
-                      return <li key={'resume-item' + k}>{i}</li>
-                    })
-                  }
-                </ul>
+                <table className='table table-hover mt-2'>
+                  <thead>
+                    <tr><th>{i.position}</th></tr>
+                  </thead>
+                  <tbody>
+
+                    {
+                      i.works.map((i, k) => {
+                        return <tr key={'resume-item' + k}><td>{i}</td></tr>
+                      })
+                    }
+                  </tbody>
+                </table>
               </div>
             )
           })}
