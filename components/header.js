@@ -20,9 +20,9 @@ export default function header() {
           <img src="/img/profile-pic.jpg" alt="" className="img-fluid rounded-circle" />
           <h1 className="text-light"><a href="index.html">Татьяна Савина</a></h1>
           <div className="social-links mt-3 text-center">
-            <a href="#"><img src='/img/facebook.svg' className='img-fluid' /></a>
-            <a href="#"><img src='/img/instagram.svg' className='img-fluid' /></a>
-            <a href="#"><img src='/img/vk.svg' className='img-fluid' /></a>
+            <a href="https://facebook.com/taoyami1" target="_blank"><img src='/img/facebook.svg' className='img-fluid' /></a>
+            <a href="https://instagram.com/taoyami" target="_blank"><img src='/img/instagram.svg' className='img-fluid' /></a>
+            <a href="https://vk.com/taoyami" target="_blank"><img src='/img/vk.svg' className='img-fluid' /></a>
           </div>
         </div>
 
