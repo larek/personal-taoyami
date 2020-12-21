@@ -34,25 +34,25 @@ export default function header() {
                 </a></Link>
             </li>
             <li className={router.pathname === '/education' ? 'active' : ''}>
-              <Link href='education'><a href='/'>
+              <Link href='education'><a href='/education'>
                 <i className='bi bi-bell'></i>
                 Образование
                 </a></Link>
             </li>
             <li className={router.pathname === '/skills' ? 'active' : ''}>
-              <Link href='skills'><a href='/'>
+              <Link href='skills'><a href='/skills'>
                 <i className='bi bi-star'></i>
                 Навыки
                 </a></Link>
             </li>
             <li className={router.pathname === '/resume' ? 'active' : ''}>
-              <Link href='resume'><a href='/'>
+              <Link href='resume'><a href='/resume'>
                 <i className='bi bi-file-earmark-text'></i>
                 Опыт работы
                 </a></Link>
             </li>
             <li className={router.pathname === '/contacts' ? 'active' : ''}>
-              <Link href='contacts'><a href='/'>
+              <Link href='contacts'><a href='/contacts'>
                 <i className='bi bi-envelope'></i>
                 Контакты
                 </a></Link>
