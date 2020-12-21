@@ -5,7 +5,6 @@ import Header from '../components/header';
 export default function Layout({ children, title }) {
 
   const toggle2 = e => {
-    console.log(e.target);
     if (document.body.classList.contains('mobile-nav-active')) {
       document.body.classList.remove('mobile-nav-active');
     }

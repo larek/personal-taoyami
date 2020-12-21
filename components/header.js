@@ -15,18 +15,18 @@ export default function header() {
 
   return (
     <header id="header">
-      <div class="d-flex flex-column">
-        <div class="profile">
-          <img src="/img/profile-pic.jpg" alt="" class="img-fluid rounded-circle" />
-          <h1 class="text-light"><a href="index.html">Татьяна Савина</a></h1>
-          <div class="social-links mt-3 text-center">
+      <div className="d-flex flex-column">
+        <div className="profile">
+          <img src="/img/profile-pic.jpg" alt="" className="img-fluid rounded-circle" />
+          <h1 className="text-light"><a href="index.html">Татьяна Савина</a></h1>
+          <div className="social-links mt-3 text-center">
             <a href="#"><img src='/img/facebook.svg' className='img-fluid' /></a>
             <a href="#"><img src='/img/instagram.svg' className='img-fluid' /></a>
             <a href="#"><img src='/img/vk.svg' className='img-fluid' /></a>
           </div>
         </div>
 
-        <nav class="nav-menu">
+        <nav className="nav-menu">
           <ul>
             <li className={router.pathname === '/' ? 'active' : ''}>
               <Link href='/'><a href='/'>
@@ -61,7 +61,7 @@ export default function header() {
 
           </ul>
         </nav>
-        <button type="button" onClick={toggle} class="mobile-nav-toggle d-xl-none"><i class="bi bi-list"></i></button>
+        <button type="button" onClick={toggle} className="mobile-nav-toggle d-xl-none"><i className="bi bi-list"></i></button>
 
       </div>
     </header>
