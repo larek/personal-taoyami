@@ -4,7 +4,8 @@ import Image from 'next/image';
 import Document from 'next/document';
 import { useEffect } from 'react';
 
-const toggle = () => {
+const toggle = e => {
+  e.stopPropagation();
   document.body.classList.toggle('mobile-nav-active');
 }
 

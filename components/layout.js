@@ -1,9 +1,18 @@
 import Head from 'next/head'
 import Header from '../components/header';
 
+
 export default function Layout({ children, title }) {
+
+  const toggle2 = e => {
+    console.log(e.target);
+    if (document.body.classList.contains('mobile-nav-active')) {
+      document.body.classList.remove('mobile-nav-active');
+    }
+  }
+
   return (
-    <div>
+    <div onClick={toggle2}>
       <Head>
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
