@@ -18,8 +18,10 @@ export default function header() {
       <div className="d-flex flex-column">
         <div className="profile">
           <img src="/img/profile-pic.jpg" alt="" className="img-fluid rounded-circle" />
-          <h1 className="text-light"><a href="index.html">Татьяна Савина</a></h1>
-          <div className="social-links mt-3 text-center">
+          <h1 className="text-light text-center"><a href="index.html">Татьяна Савина</a></h1>
+          <div className='mt-1 text-center'><a className='text-white' href='mailto:taoyami@yandex.ru'>taoyami@yandex.ru</a></div>
+          <div className='mt-1 text-center'><a className='text-white' href='tel:+79601641052'>+79601641052</a></div>
+          <div className="social-links mt-1 text-center">
             <a href="https://facebook.com/taoyami1" target="_blank"><img src='/img/facebook.svg' className='img-fluid' /></a>
             <a href="https://instagram.com/taoyami" target="_blank"><img src='/img/instagram.svg' className='img-fluid' /></a>
             <a href="https://vk.com/taoyami" target="_blank"><img src='/img/vk.svg' className='img-fluid' /></a>
@@ -52,13 +54,6 @@ export default function header() {
                 Опыт работы
                 </a></Link>
             </li>
-            <li className={router.pathname === '/contacts' ? 'active' : ''}>
-              <Link href='contacts'><a href='/contacts'>
-                <i className='bi bi-envelope'></i>
-                Контакты
-                </a></Link>
-            </li>
-
           </ul>
         </nav>
         <button type="button" onClick={toggle} className="mobile-nav-toggle d-xl-none"><i className="bi bi-list"></i></button>
