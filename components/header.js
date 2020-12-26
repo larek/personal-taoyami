@@ -1,8 +1,23 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import Document from 'next/document';
-import { useEffect } from 'react';
+
+const ImageLoader = ({ small, big, className }) => {
+  const [image, updateImage] = useState(small);
+
+  useEffect(() => {
+    let img = new Image;
+    img.src = big;
+    img.onload = () => {
+      updateImage(big);
+    }
+  }, [image]);
+
+  return (
+    <img src={image} className={className} />
+  )
+}
 
 const toggle = e => {
   e.stopPropagation();
@@ -10,14 +25,13 @@ const toggle = e => {
 }
 
 export default function header() {
-
   const router = useRouter();
 
   return (
     <header id="header">
       <div className="d-flex flex-column">
         <div className="profile">
-          <img src="/img/profile-pic.jpg" alt="" className="img-fluid rounded-circle" />
+          <ImageLoader small='/img/profile-pic-20.jpg' big='/img/profile-pic.jpg' className='img-fluid rounded-circle image-loader' />
           <h1 className="text-light text-center"><a href="index.html">Татьяна Савина</a></h1>
           <div className='mt-1 text-center'><a className='text-white' href='mailto:taoyami@yandex.ru'>taoyami@yandex.ru</a></div>
           <div className='mt-1 text-center'><a className='text-white' href='tel:+79601641052'>+79601641052</a></div>
