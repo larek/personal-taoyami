@@ -3,7 +3,7 @@ import Typed from 'react-typed';
 
 export default function Home() {
   return (
-    <Layout title='Home page'>
+    <Layout title='Татьяна Савина. SMM, фотосъемка, медиапланирование. '>
       <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
         <div className="hero-container" data-aos="fade-in">
           <h1>Татьяна Савина</h1>
