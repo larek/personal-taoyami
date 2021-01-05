@@ -3,22 +3,6 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Document from 'next/document';
 
-const ImageLoader = ({ small, big, className }) => {
-  const [image, updateImage] = useState(small);
-
-  useEffect(() => {
-    let img = new Image;
-    img.src = big;
-    img.onload = () => {
-      updateImage(big);
-    }
-  }, [image]);
-
-  return (
-    <img src={image} className={className} />
-  )
-}
-
 const toggle = e => {
   e.stopPropagation();
   document.body.classList.toggle('mobile-nav-active');
@@ -31,7 +15,7 @@ export default function header() {
     <header id="header">
       <div className="d-flex flex-column">
         <div className="profile">
-          <ImageLoader small='/img/profile-pic-20.jpg' big='/img/profile-pic.jpg' className='img-fluid rounded-circle image-loader' />
+          <img src='/img/profile-pic.jpg' className='img-fluid rounded-circle image-loader' />
           <h1 className="text-light text-center"><a href="index.html">Татьяна Савина</a></h1>
           <div className='mt-1 text-center'><a className='text-white' href='mailto:taoyami@yandex.ru'>taoyami@yandex.ru</a></div>
           <div className='mt-1 text-center'><a className='text-white' href='tel:+79601641052'>+79601641052</a></div>
