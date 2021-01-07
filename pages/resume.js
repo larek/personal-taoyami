@@ -15,17 +15,16 @@ export default function contacts({ data }) {
         {data.map((i, k) => {
           return (
             <div className='bg-light p-4 mb-4' key={'resume-item-' + k}>
-              <div className='py-1'><i className='bi bi-people-fill'></i> {i.name}</div>
-              <div className='py-1'><i className='bi bi-calendar3'></i> {i.period}</div>
-              <div className='py-1'>
-                <i className='bi bi-link-45deg'></i>
+              <div className='lead fw-normal'>{i.name}</div>
+              <small className='text-uppercase'>{i.period}</small>
+              <div className='py-3'>
                 {
                   i.links.map((i, k) => {
-                    return <a target='_blank' href={i} key={'resume-item' + k}>{i} </a>
+                    return <div><a target='_blank' href={i} key={'resume-item' + k}> <i className='bi bi-link-45deg'></i> {i} </a></div>
                   })
                 }
               </div>
-              <table className='table table-hover mt-2'>
+              <table className='table table'>
                 <thead>
                   <tr><th>{i.position}</th></tr>
                 </thead>

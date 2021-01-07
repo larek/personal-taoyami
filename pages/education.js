@@ -6,7 +6,7 @@ export default function education() {
   return (
     <Layout title={title}>
       <Content title={title}>
-        <table className='table table-hover'>
+        <table className='table'>
           <thead>
             <tr>
               <th>Высшее образование</th>
@@ -22,7 +22,7 @@ export default function education() {
           </tbody>
         </table>
 
-        <table className='table table-hover'>
+        <table className='table'>
           <thead>
             <tr>
               <th>Курсы повышения квалификации</th>
@@ -37,7 +37,7 @@ export default function education() {
           </tbody>
         </table>
 
-        <table className='table table-hover'>
+        <table className='table'>
           <thead>
             <tr>
               <th>Текущее обучение</th>

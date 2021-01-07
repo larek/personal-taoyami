@@ -6,7 +6,7 @@ export default function skills() {
   return (
     <Layout title={title}>
       <Content title={title}>
-        <table className="table table-hover">
+        <table className="table">
           <tbody>
             <tr>
               <td>Разработка контент-стратегии, включающей текстовые, визуальные форматы в рамках любых ресурсов компании (сайт, социальные сети, youtube, телеграм).</td>
