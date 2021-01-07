@@ -1,5 +1,6 @@
 $font-family-base: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 $light: rgb(241, 241, 241);
+$link-color: #149ddd;
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-icons/font/bootstrap-icons.css';
 @import './header';
@@ -11,16 +12,6 @@ $light: rgb(241, 241, 241);
 --------------------------------------------------------------*/
 body {
   color: #272829;
-}
-
-a {
-  color: #149ddd;
-  text-decoration: none;
-}
-
-a:hover {
-color: #37b3ed;
-  text-decoration: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
