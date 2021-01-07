@@ -63,7 +63,7 @@ body {
 #hero:before {
   content: "";
   background: rgba(5, 13, 24, 0.3);
-  position: absolute;
+  position: fixed;
   bottom: 0;
   top: 0;
   left: 0;
