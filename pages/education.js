@@ -15,7 +15,7 @@ export default function education() {
           <tbody>
             <tr>
               <td>
-                <a href='https://www.nntu.ru/ target='_blank'>НГТУ им. Р.Е. Алексеева</a>, экономический факультет
+                <a href='https://www.nntu.ru/' target='_blank'>НГТУ им. Р.Е. Алексеева</a>, экономический факультет
             </td>
             </tr>
           </tbody>
