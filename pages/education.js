@@ -15,8 +15,7 @@ export default function education() {
           <tbody>
             <tr>
               <td>
-                УРАО (Университет Российской Академии Образования).
-                Факультет «Связи с общественностью»
+                <a href='https://www.nntu.ru/ target='_blank'>НГТУ им. Р.Е. Алексеева</a>, экономический факультет
             </td>
             </tr>
           </tbody>
@@ -29,11 +28,10 @@ export default function education() {
             </tr>
           </thead>
           <tbody>
-            <tr><td>Курс «SMM-специалист» от <a href='https://netology.ru/programs/smm-specialist' target='_blank'>«Нетология»</a></td></tr>
-            <tr><td>Курс «UX c нуля как стать проектировщиком интерфейсов»</td></tr>
-            <tr><td>Курс «Реальный Директ 2.0»</td></tr>
-            <tr><td>Курс «Реальный Маркетинг»</td></tr>
-            <tr><td>Детальное изучение бесплатных и платных материалов главреда Максима Ильяхова, материалов <a href="https://bureau.ru" target='_blank'>«Бюро Горбунова»</a> и материалов, рекомендованных <a href="https://bureau.ru/school/editors/13/" target='_blank'>«Школой редакторов»</a>.</td></tr>
+            <tr><td>Курс <a href='https://www.udemy.com/course/ux-from-zero/' target='_blank'>«UX c нуля как стать проектировщиком интерфейсов»</a></td></tr>
+            <tr><td>Курс <a href='https://rs.school/js/' target='_blank'>JavaScript/Front-end</a></td></tr>
+            <tr><td>Давно — курсы «Реальный Маркетинг», «Яндекс.Директ», «SMM-специалист» от Нетологии</td></tr>
+            <tr><td>Изучение редактуры по всем доступным платным и бесплатным материалам редактора Максима Ильяхова из <a href="https://bureau.ru" target='_blank'>«Бюро Горбунова»</a></td></tr>
           </tbody>
         </table>
 
@@ -45,7 +43,8 @@ export default function education() {
           </thead>
           <tbody>
             <tr>
-              <td>Курс по созданию анимации в Adobe After Effects.</td>
+              <td>Blender</td>
+              <td>UX/UI</td>
             </tr>
           </tbody>
         </table>
